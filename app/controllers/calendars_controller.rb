@@ -37,7 +37,7 @@ class CalendarsController < ApplicationController
       end
 
       wday_num = Date.today.wday + x
-      # xはtimesメソッドと連携、その日以降の曜日を取得するため
+      # xはtimesメソッドと連携、その日以降の曜日を取得する
       if wday_num >= 7
         wday_num = wday_num -7
       end
